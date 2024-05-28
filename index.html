@@ -3,112 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eka Pramadanta</title>
-<style>
+    <title>Modern Landing Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
 
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    height: 100vh;
-    color: #fff;
-}
+        .hero-section {
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center;
+            background-size: cover;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
 
-.sidebar {
-    background-color: #333;
-    padding: 20px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+        .hero-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 10px;
+        }
 
-.profile {
-    text-align: center;
-}
+        .features-section {
+            padding: 60px 0;
+        }
 
-.profile-icon {
-    background-color: #666;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 10px;
-}
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
 
-.profile h2 {
-    margin: 10px 0;
-}
-
-.profile a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-.report-link {
-    color: #ccc;
-    text-decoration: none;
-    text-align: center;
-}
-
-.main-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-.image-section {
-    flex-grow: 1;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.image-section img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-}
-
-
-</style>
-   
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="profile">
-            <div class="profile-icon"></div>
-            <h2>Nuel</h2>
-            <a href="#">Kunjungi Profil</a>
+    <!-- Hero Section -->
+    <section class="hero-section d-flex justify-content-center align-items-center">
+        <div class="hero-content text-center">
+            <h1>Welcome to Our Modern Landing Page</h1>
+            <p class="lead">We create beautiful and functional websites.</p>
+            <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
         </div>
-        <a href="#" class="report-link">Laporkan Penyalahgunaan</a>
-    </div>
-    <div class="main-content">
-        <header>
-            <h1>EKA PRAMADANTA</h1>
-            <a href="#">Telusuri</a>
-        </header>
-        <div class="image-section">
-            <img src="path-to-your-image.jpg" alt="Decorative image">
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Feature One</h3>
+                    <p>Detail about feature one. It is really amazing and useful.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Feature Two</h3>
+                    <p>Detail about feature two. It is really amazing and useful.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Feature Three</h3>
+                    <p>Detail about feature three. It is really amazing and useful.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 Modern Landing Page. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and FontAwesome scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
